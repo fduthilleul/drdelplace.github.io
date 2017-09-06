@@ -7,6 +7,12 @@ Light Brown #FFFAF2
 Medium Brown #B2A691
 */
 
+body{
+	color: #608BB2;
+	background-color: none;
+	font-family: 'Open Sans';
+}
+
 h1{
 	color: #608BB2;
 }
