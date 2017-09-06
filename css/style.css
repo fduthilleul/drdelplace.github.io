@@ -15,6 +15,7 @@ body{
 
 h1{
 	color: #608BB2;
+	font-size: 32px;
 }
 
 ul{
@@ -35,4 +36,8 @@ ul{
 .wrapper {
 	height:650px;
 	padding-top:150px
+}
+
+.vertical-spacer {
+	height: 8em;
 }
