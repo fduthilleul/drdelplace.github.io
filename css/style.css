@@ -16,3 +16,23 @@ body{
 h1{
 	color: #608BB2;
 }
+
+ul{
+	text-decoration: none;
+}
+
+#logo{
+	color: #B2A691;
+}
+
+#footer {
+	background: black;
+	color:#aaaaaa;
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
+.wrapper {
+	height:650px;
+	padding-top:150px
+}
