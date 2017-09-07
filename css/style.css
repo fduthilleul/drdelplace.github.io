@@ -69,6 +69,10 @@ ul{
 	color:#aaaaaa;
 }
 
+#map {
+	margin-left:50px;
+}
+
 .vertical-spacer {
 	height: 8em;
 }
