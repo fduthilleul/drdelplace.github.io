@@ -9,11 +9,13 @@ Medium Brown #B2A691
 
 html{
 	height:100%;
+	width:100%; 
 }
 
 body{
 	height:100%;
-	position: relative;
+	width: 100%;
+	/*position: relative;*/
 	color: #608BB2;
 	font-family: 'Open Sans';
 }
@@ -46,22 +48,22 @@ ul{
 
 #wrapper{
   height:100%;
-  position: relative;
+ 
 }
 
 #main {
-	height: 100%;
+    height: 100%;
 	position: relative;
 	padding-bottom: 50px;
+	text-align: center;
 	background-image: url('../images/pexels-photo-257937.jpeg');
 	background-size: cover;
 	color:white;
 }
 
-
 #footer {
 	height: 50px;
-	position: absolute;
+    position: absolute;
 	bottom: 0;
 	background: black;
 	color:#aaaaaa;
@@ -69,4 +71,13 @@ ul{
 
 .vertical-spacer {
 	height: 8em;
+}
+
+.container {
+	width:100%;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+
 }
