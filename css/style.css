@@ -10,6 +10,8 @@ Medium Brown #B2A691
 body{
 	color: #608BB2;
 	background-color: none;
+	background-image: url('../images/pexels-photo-237813.jpeg');
+	background-size:cover;
 	font-family: 'Open Sans';
 }
 
