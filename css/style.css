@@ -35,8 +35,9 @@ ul{
 
 
 #accueil{
+	padding-left:10px;
 	padding-top: 50px;
-	text-align: justify;
+	text-align: left;
 }
 
 /*
@@ -83,5 +84,8 @@ ul{
 	margin-right: 0;
 	padding-left: 0;
 	padding-right: 0;
+}
 
+.copyright {
+	padding-top:10px;
 }
