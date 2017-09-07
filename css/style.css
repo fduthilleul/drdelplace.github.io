@@ -33,6 +33,10 @@ ul{
 	padding-bottom: 3em;
 }
 
+#accueil{
+	padding-top: 100px;
+}
+
 .wrapper {
 	background-image: url('../images/pexels-photo-257937.jpeg');
 	background-size: cover;
