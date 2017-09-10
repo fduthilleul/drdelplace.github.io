@@ -9,32 +9,35 @@ Medium Brown #B2A691
 
 html {
 	height:100%;
-	width:100%; 
+    width:100%; 
 }
 
 body{
 	height:100%;
 	width: 100%;
-	/*position: relative;*/
+	position: relative;
 	color: #608BB2;
 	font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
 	color: #608BB2;
-	font-size: 72px;
+	font-size: 50px;
 	font-style: bold;
+	text-align:center;
 }
 
 h2 {	
 	color: #D9EPFF;
 	font-size: 28px;
-	font-family: 'Open Sans';
+	font-family: 'Nixie One';
 }
 
+/*
 #main:hover {
 	opacity: 0.7;
 }
+*/
 
 .p#main {
 	font-size: 10px;
@@ -43,7 +46,9 @@ h2 {
 	font-style: italic;
 }
 
-
+#accueil {
+	text-align: left;
+}
 
 ul{
 	text-decoration: none;
@@ -70,8 +75,9 @@ ul{
 	position: relative;
 	padding-bottom: 50px;
 	text-align: center;
-	/*background-image: url('../images/pexels-photo-257937.jpeg');*/
-	background-image: url('../images/pexels-photo-265047.jpeg');
+	/*background-image: url('../images/pexels-photo-208556.jpeg');*/
+	/*background-image: url('../images/model-face-beautiful-black-and-white-407035.jpeg');*/
+	background-image: url('../images/pexels-photo-373076.jpeg');
 	background-size: cover;
 }
 
@@ -106,4 +112,33 @@ ul{
 
 .copyright {
 	padding-top:10px;
+}
+
+/* How to override the default Bootstrap navbar */
+
+.navbar-transparent {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-transparent .navbar-brand,
+.navbar-transparent .navbar-nav > li > a {
+  color: #eeeeee;
+  /*line-height: 50px;*/
+}
+
+.navbar-transparent .navbar-nav > li > a:hover,
+.navbar-transparent .navbar-nav > li > a:active,
+.navbar-transparent .navbar-nav > li > a:focus,
+.navbar-transparent .navbar-nav > .open > a,
+.navbar-transparent .navbar-nav > .open > a:hover,
+.navbar-transparent .navbar-nav > .open > a:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-transparent .navbar-brand:hover,
+.navbar-transparent .navbar-brand:active,
+.navbar-transparent .navbar-brand:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
 }
