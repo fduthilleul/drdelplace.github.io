@@ -33,11 +33,6 @@ ul{
 	color: #B2A691;
 }
 
-#rdv
-{
-	margin-bottom: 50px;
-}
-
 /*
 #header{
   position: relative;
@@ -72,14 +67,14 @@ ul{
 	margin-left:50px;
 }
 
+.btn#rdv {
+	text-align: center;
+	margin-right:20px;
+}
+
 .vertical-spacer {
 	height: 8em;
 }
-
-.btn {
-	min-width:250px;
-}
-
 
 .container {
 	width:100%;
