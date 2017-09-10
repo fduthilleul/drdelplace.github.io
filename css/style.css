@@ -33,11 +33,9 @@ ul{
 	color: #B2A691;
 }
 
-
-#accueil{
-	padding-left:10px;
-	padding-top: 50px;
-	text-align: left;
+#rdv
+{
+	margin-bottom: 50px;
 }
 
 /*
@@ -77,6 +75,11 @@ ul{
 .vertical-spacer {
 	height: 8em;
 }
+
+.btn {
+	min-width:250px;
+}
+
 
 .container {
 	width:100%;
