@@ -7,7 +7,7 @@ Light Brown #FFFAF2
 Medium Brown #B2A691
 */
 
-html{
+html {
 	height:100%;
 	width:100%; 
 }
@@ -17,20 +17,33 @@ body{
 	width: 100%;
 	/*position: relative;*/
 	color: #608BB2;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	color: #608BB2;
+	font-size: 72px;
+	font-style: bold;
+}
+
+h2 {	
+	color: #D9EPFF;
+	font-size: 28px;
 	font-family: 'Open Sans';
 }
 
-.container#main {
-	font-size: 30px;
+#main:hover {
+	opacity: 0.7;
+}
+
+.p#main {
+	font-size: 10px;
 	font-color: #B2A691;
 	font-family: 'Open Sans';
 	font-style: italic;
 }
 
-h1{
-	color: #608BB2;
-	font-size: 28px;
-}
+
 
 ul{
 	text-decoration: none;
@@ -57,7 +70,8 @@ ul{
 	position: relative;
 	padding-bottom: 50px;
 	text-align: center;
-	background-image: url('../images/pexels-photo-257937.jpeg');
+	/*background-image: url('../images/pexels-photo-257937.jpeg');*/
+	background-image: url('../images/pexels-photo-265047.jpeg');
 	background-size: cover;
 }
 
