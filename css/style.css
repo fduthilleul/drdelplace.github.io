@@ -12,10 +12,10 @@ html {
     width:100%; 
 }
 
-body{
+body {
 	height:100%;
 	width: 100%;
-	position: relative;
+	/*position: relative;*/
 	color: #608BB2;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -68,29 +68,31 @@ ul{
 
 #wrapper{
   height:100%;
+  width:100%;
  
 }
 
 #main {
     height: 100%;
-	position: relative;
+    width:100%;
 	padding-bottom: 50px;
 	text-align: center;
-	background-image: url('../images/nature-garden-grass-lawn.jpg');
+	/*background-image: url('../images/nature-garden-grass-lawn.jpg');*/
 	background-size: cover;
-	/*background-image: url('../images/pexels-photo-131683.jpeg');
-	background-image: url('../images/dandelion-seeds-number-of-lion-screen-pilot-159056.jpeg');
+	background-image: url('../images/aloe-acne.jpg');
+	/*background-image: url('../images/dandelion-seeds-number-of-lion-screen-pilot-159056.jpeg');
 	background-color: #DDDDDD;*/
 }
 
 #contact {
     height: 100%;
-	position: relative;
+    width:100%;
+	/*position: relative;*/
 	padding-bottom: 50px;
 	text-align: center;
 	/*background-image: url('../images/pexels-photo-208556.jpeg');*/
 	/*background-image: url('../images/model-face-beautiful-black-and-white-407035.jpeg');*/
-	background-image: url('../images/pexels-photo.jpg');
+	background-image: url('../images/pexels-photo-316466.jpeg');
 	background-size: cover;
 }
 
@@ -102,9 +104,12 @@ ul{
 	color:#aaaaaa;
 }
 
+
 #map {
-	margin-left:50px;
+	width: 100%;
+	margin: none
 }
+
 
 .btn#rdv {
 	text-align: center;
@@ -112,6 +117,7 @@ ul{
 }
 
 .vertical-spacer {
+	width:100%;
 	height: 10em;
 }
 
