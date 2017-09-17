@@ -21,16 +21,17 @@ body{
 }
 
 h1 {
-	color: white;
-	font-size: 50px;
+	color: black;
+	font-size: 100px;
 	font-style: bold;
-	font-family: Monoton, cursive;
+	font-family: 'Raleway Dots', cursive;
 	text-align:center;
 }
 
 h2 {	
-	color: #D9EPFF;
-	font-size: 28px;
+	color: #666666;
+	font-style: bold;
+	font-size: 34px;
 	font-family: 'Nixie One';
 }
 
@@ -75,10 +76,11 @@ ul{
 	position: relative;
 	padding-bottom: 50px;
 	text-align: center;
-	/*background-image: url('../images/pexels-photo-305821.jpeg');*/
-	background-image: url('../images/pexels-photo-131683.jpeg');
-	/*background-image: url('../images/dandelion-plant-close-summer-57443.jpeg');*/
-	background-size: cover;*/
+	background-image: url('../images/nature-garden-grass-lawn.jpg');
+	background-size: cover;
+	/*background-image: url('../images/pexels-photo-131683.jpeg');
+	background-image: url('../images/dandelion-seeds-number-of-lion-screen-pilot-159056.jpeg');
+	background-color: #DDDDDD;*/
 }
 
 #contact {
@@ -110,7 +112,7 @@ ul{
 }
 
 .vertical-spacer {
-	height: 16em;
+	height: 10em;
 }
 
 .container {
