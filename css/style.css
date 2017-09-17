@@ -21,9 +21,10 @@ body{
 }
 
 h1 {
-	color: #608BB2;
+	color: white;
 	font-size: 50px;
 	font-style: bold;
+	font-family: Monoton, cursive;
 	text-align:center;
 }
 
@@ -39,11 +40,10 @@ h2 {
 }
 */
 
-.p#main {
-	font-size: 10px;
-	font-color: #B2A691;
-	font-family: 'Open Sans';
-	font-style: italic;
+.actes {
+	font-size: 40px;
+	color: white;
+	font-family: 'Raleway Dots', cursive;
 }
 
 #accueil {
@@ -75,10 +75,10 @@ ul{
 	position: relative;
 	padding-bottom: 50px;
 	text-align: center;
-	/*background-image: url('../images/pexels-photo-208556.jpeg');*/
-	/*background-image: url('../images/model-face-beautiful-black-and-white-407035.jpeg');*/
-	background-image: url('../images/dandelion-plant-close-summer-57443.jpeg');
-	background-size: cover;
+	/*background-image: url('../images/pexels-photo-305821.jpeg');*/
+	background-image: url('../images/pexels-photo-131683.jpeg');
+	/*background-image: url('../images/dandelion-plant-close-summer-57443.jpeg');*/
+	background-size: cover;*/
 }
 
 #contact {
@@ -110,7 +110,7 @@ ul{
 }
 
 .vertical-spacer {
-	height: 8em;
+	height: 16em;
 }
 
 .container {
