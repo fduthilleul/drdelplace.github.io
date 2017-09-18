@@ -7,32 +7,31 @@ Light Brown #FFFAF2
 Medium Brown #B2A691
 */
 
-html {
-	height:100%;
-    width:100%; 
-}
-
-body {
-	height:100%;
-	width: 100%;
-	/*position: relative;*/
-	color: #608BB2;
-	font-family: 'Open Sans', sans-serif;
+html, body {
+	height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+	font-family: 'Open Sans', sans-serif; 
 }
 
 h1 {
 	color: black;
 	font-size: 100px;
-	font-style: bold;
 	font-family: 'Raleway Dots', cursive;
-	text-align:center;
+	text-align: center;
 }
 
 h2 {	
 	color: #666666;
-	font-style: bold;
 	font-size: 34px;
 	font-family: 'Nixie One';
+}
+
+#wrapper {
+  height:100%;
+  width:100%;
+ 
 }
 
 /*
@@ -66,11 +65,7 @@ ul{
 
 */
 
-#wrapper{
-  height:100%;
-  width:100%;
- 
-}
+
 
 #main {
     height: 100%;
@@ -107,7 +102,7 @@ ul{
 
 #map {
 	width: 100%;
-	margin: none
+	margin: none;
 }
 
 
