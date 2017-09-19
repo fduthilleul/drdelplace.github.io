@@ -167,7 +167,7 @@ ul{
 	h1 {font-size: 40px;}
 	h2 {font-size: 30px;}
 	/*#main {min-height: 300px;}*/
-	.vertical-spacer { height: 3em;}
+	.vertical-spacer { height: 4em;}
 }
 
 @media only screen and (min-width: 480px) and (max-width: 795px) {
