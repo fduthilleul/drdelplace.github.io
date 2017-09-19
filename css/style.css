@@ -158,6 +158,6 @@ ul{
 }
 
 @media only screen and (min-width: 479px) {
-	#main {font-size: 40px;}
-
+	#main {font-size: 20px;}
+	.vertical-spacer { height: 3em;}
 }
