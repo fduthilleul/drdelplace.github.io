@@ -69,14 +69,17 @@ ul{
 
 #main {
     height: 100%;
-    width:100%;
+    /*width:100%;*/
 	padding-bottom: 50px;
 	text-align: center;
 	/*background-image: url('../images/nature-garden-grass-lawn.jpg');*/
-	background-size: cover;
 	background-image: url('../images/aloe-acne.jpg');
 	/*background-image: url('../images/dandelion-seeds-number-of-lion-screen-pilot-159056.jpeg');
 	background-color: #DDDDDD;*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 #contact {
@@ -157,7 +160,19 @@ ul{
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+/* Media Queries to adapt to different screen sizes */
+
 @media only screen and (max-width: 480px) {
-	h1, h2 {font-size: 30px;}
+	h1 {font-size: 40px;}
+	h2 {font-size: 30px;}
+	/*#main {min-height: 300px;}*/
 	.vertical-spacer { height: 3em;}
 }
+
+@media only screen and (min-width: 480px) and (max-width: 795px) {
+	h1 {font-size: 60px;}
+	h2 {font-size: 40px;}
+	/*#main {min-height: 300px;}*/
+	.vertical-spacer { height: 4em;}
+}
+
