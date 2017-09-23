@@ -1,3 +1,7 @@
+@charset "UTF-8";
+
+* {margin:0; padding:0;border:none;}
+
 /*
 Polar Bear from Adobe Color CC
 Medium Blue #608BB2
@@ -92,6 +96,16 @@ ul{
 	/*background-image: url('../images/model-face-beautiful-black-and-white-407035.jpeg');*/
 	background-image: url('../images/pexels-photo-316466.jpeg');
 	background-size: cover;
+}
+
+#cabinet {
+    height: 100%;
+    width:100%;
+	/*position: relative;*/
+	margin-top:60px;
+	text-align: center;
+	/*background-image: url('../images/PlacedAth.jpg');
+	background-size: no-repeat ;*/
 }
 
 #footer {
