@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans:400,700" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
     <!--[if lt IE 9]>
@@ -20,48 +21,88 @@
    <style>
     .site {
       display: grid;
-      grid-template-columns: 1fr repeat(4, minmax(auto,10em)) 1fr;
-      grid-template-rows: minmax(1em, auto) 1fr minmax(1em, auto);
-      border: 3px red solid;
-      visibility: visible;
-      background-color: blue;
-      grid-gap: 10px solid;
+      height: 100%;
+      grid-template-columns: repeat(13, [gutter] 10px [col] 1fr);
+      grid-template-rows:
+                [row] auto repeat(14, [gutter] 10px [row] 60px);
+      background-image: url('images/pexels-photo-131683.jpeg');
+      
+      background-size: cover;
+    }
+
+    .header{
+      grid-column: 1 / span auto;
+      grid-row: 1 ;
+    }
+
+    .Box1{
+      grid-column: gutter 2 / span gutter 6;
+      grid-row: 1 / 2;
+      text-align: top;
+      /*border: 3px solid;*/ 
+      text-align: center;
+      margin-top: 100px;
+      padding: 25px;
+      background-color: rgba(221, 221, 221, 0.8);
+          }
+
+    .Box1:hover,.Box2:hover,.Box3:hover{
+      background-color: #DDDDDD; 
+      background-color: rgba(0, 0, 0, 0.7);
       color:white;
     }
 
-   #header {
-      grid-column: 8;
-    }
-
-    .Box1 {
+    .Box{
+      grid-row: 4;
+      background-color: #DDDDDD;
+      text-align: center;
       border: 3px solid;
-      margin-top: 50px;
-      grid-column: 2/3;
+      background-color: rgba(221, 221, 221, 0.8);
     }
 
-    .Box2{
-      border: 3px solid;
-      margin-top: 50px;
-      grid-column: 6/8;
+    .Box3{
+      grid-column: col 8 / col 13 ;
+      grid-row: 1 / span row 5; 
+      text-align: center;
+      background-color: #DDDDDD;
+      /*border: 3px solid;*/
+      margin-top: 100px;
+      padding: 25px;
+      background-color: rgba(221, 221, 221, 0.8);
     }
 
-    .footer {
-      grid-column: 5;
+    img:hover {
+      z-index: 10;
+      box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
     }
+
+    p{
+      font-size: 16px;
+      font-family: Open Sans;
+      letter-spacing: 1px;
+    }
+/*
+    a{
+      color:black;
+    }
+
+    a:hover
+    {
+      color:white;
+    }
+*/
 
   </style>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 
   <body>
 
-  <!-- Wrapper -->
+  <!-- Site Wrapper -->
 
-
-
-  <div class="container">
+  <div class="site">
       <nav class="navbar navbar-default navbar-fixed-top navbar-transparent" role="navigation" id="menu">
         <div class="container-fluid">
+          <!--Brand and toggle get grouped for better mobile display -->
          <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
@@ -73,32 +114,60 @@
             DR DAPHNE DELPLACE
             </a>
           </div>
+
+          <!--Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li><a href="index.html">ACCUEIL</a></li>
-              <li><a href="index.html">LE CABINET MEDICAL</a></li>
-              <li><a href="index.html">LA CONSULTATION</a></li>
-              <li><a href="#contact">CONTACT</a></li>
+              <li><a href="cabinet-medical.html">LE CABINET MEDICAL</a></li>
+              <li><a href="consultation.html">LA CONSULTATION</a></li>
+              <li><a href="index.html#contact">CONTACT</a></li>
             </ul>
             <ul class="nav navbar-right">
               <li><a class="btn btn-success navbar-btn" href="https://progenda.be/calendars/docteur-delplace-daphne-dermatologue-ath-1cf29121-b19c-4393-abc8-a50a9ecb8f0e/availabilities" id="rdv" target="_self">PRENDRE RDV</a></li>
             </ul>
-          </div>
-        </div>
+          </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container-fluid -->
       </nav>
+  
+  
+    <div class="Box1">
+      <i class="fa fa-stethoscope fa-4x" aria-hidden="true"></i>
+      <p></p>
+      <p><b>LOCALISATION</b></p>
+      <p>Le cabinet médical est situé dans le centre ville d'Ath à deux pas de la Grand-Place.</p>
+      
+    </div>
+   <!-- <div class="Box2">
+        <i class="fa fa-calendar fa-4x" aria-hidden="true"></i>
+      <p></p>
+      <p><b>PRISE DE RENDEZ-VOUS</b></p>
+      </p>
+    </div> 
+  -->
+    <div class="Box3">
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhIp_8Tx5odkd6__Mu8Y5pMYaXUf0DNB0&exp&sensor=false&libraries=places"></script>
+
+          <script type="text/javascript">
+            var myLatlng = new google.maps.LatLng(50.632545, 3.778048);
+
+            var myOptions = {
+                zoom: 15,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                styles: [{"featureType":"all","stylers":[{"saturation":0},{"hue":"#e7ecf0"}]},{"featureType":"road","stylers":[{"saturation":-70}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"visibility":"simplified"},{"saturation":-60}]}]
+            };
+
+            var map = new google.maps.Map(document.getElementById('map'), myOptions);
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: "You are here!"
+            });
+          </script>
     </div>
 
 
-<div class="site">
-
-    <div class="Box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, </div>
-    <div class="Box2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </div>
-
-<!-- Footer -->
-    <div class="footer">
-          <p class="copyright">© 2017 Dr D. Delplace</p>
-    </div>
-</div>
 </div>
 
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
@@ -106,3 +175,4 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   </body>
 </html>
+
