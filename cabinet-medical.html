@@ -24,10 +24,10 @@
       height: 100%;
       grid-template-columns: repeat(13, [gutter] 10px [col] 1fr);
       grid-template-rows:
-                [row] auto repeat(14, [gutter] 10px [row] 60px);
-     /* background-image: url('images/background-close-up-flora-fresh-41324.jpg');
+                auto repeat(14, [gutter] 10px [row] 1fr);
+      background-image: url('images/pexels-photo-82256.jpeg');
       
-      background-size: cover; */
+      background-size: cover;
     }
 
     .header{
@@ -52,17 +52,20 @@
       color:white;
     }
 
-    .Box{
-      grid-row: 4;
-      background-color: #DDDDDD;
+   .Box2{
+      grid-column: gutter 2 / span gutter 5;
+      grid-row: 2 /  span row 10; 
+      text-align: top;
+      /*border: 3px solid;*/ 
       text-align: center;
-      border: 3px solid;
+      margin-top: 20px;
+      padding: 25px;
       background-color: rgba(221, 221, 221, 0.8);
-    }
+          }
 
     .Box3{
       grid-column: col 7 / col 13 ;
-      grid-row: 1 / span row 5; 
+      grid-row: 1 / span row 10; 
       text-align: center;
       background-color: #DDDDDD;
       /*border: 3px solid;*/
@@ -80,6 +83,7 @@
       font-size: 16px;
       font-family: Open Sans;
       letter-spacing: 1px;
+      line-height: 20px;
     }
 /*
     a{
@@ -133,10 +137,10 @@
   
     <div class="Box1">
       <i class="fa fa-user-md fa-4x" aria-hidden="true"></i>
-      <p></p>
-      <p>Le cabinet médical est situé dans le centre ville d'Ath à deux pas de la Grand-Place.</p>
-      
+      <p><b>DERMATOLOGIE GENERALE</b></p>
+      <p>Toutes pathologies de la peau (acné, eczéma, psoriasis, examen des grains de beauté, verrue) pour enfants, adolescents et adultes.</p>
     </div>
+   
    <!-- <div class="Box2">
         <i class="fa fa-calendar fa-4x" aria-hidden="true"></i>
       <p></p>
@@ -164,6 +168,14 @@
                 title: "You are here!"
             });
           </script> 
+    </div>
+     <div class="Box2">
+      <i class="fa fa-map-marker fa-4x" aria-hidden="true"></i>
+      <p></p>
+      <p>Le cabinet médical est situé dans le centre ville d'Ath à deux pas de la Grand-Place.</p>
+      <p>Grand'Rue des Bouchers, 3</p>
+      <p>7800 ATH</p>
+      <p><i class="fa fa-phone" aria-hidden="true"></i> 068 54 24 68 </p>
     </div>
 </div>
 
